@@ -11,21 +11,28 @@
         "Whats up"
       ],
       "responses": [
-        "Greetings mortal, what truth have you come to learn today?",
-        "γεια θνητό."
+        "Greetings mortal, what truth have you come to learn today?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "commands",
+      "patterns": ["Command", "Commands"],
+      "responses": [
+        "You can ask various questions about gods or goddesses or type Name of the god or goddess + Fun Truth to find a fun truth about the god or goddess."
       ],
       "context_set": ""
     },
     {
       "tag": "goodbye",
       "patterns": [
-        "Farewell mortal, may the light of the gods shine u",
+        "cya",
         "See you later",
         "Goodbye",
         "I am Leaving",
         "Have a Good day"
       ],
-      "responses": ["Farewell mortal.", "Αντίο θνητό."],
+      "responses": ["Farewell mortal."],
       "context_set": ""
     },
     {
@@ -50,8 +57,119 @@
         "whats your name?"
       ],
       "responses": [
-        "ἀλήθεια, θυγατέρα του Δία.",
         "I am Aletheia, daughter of Zeus and the Goddess of Truth!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "zeus",
+      "patterns": ["who is zeus?", "who is your father?", "zeus?"],
+      "responses": [
+        "My father, Zeus is the Lord of the Skies and patron god of Elis and Olympia, smiter of Titans, monsters and is the leader of the Gods on Mount Olympus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "poseidon",
+      "patterns": ["who is poseidon?", "poseidon?"],
+      "responses": [
+        "Poseidon, one of the Twelve Olympians and patron god of Corinth, is the lord of the seas, earthquakes and is the brother of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hera",
+      "patterns": ["who is hera?", "hera?"],
+      "responses": [
+        "Hera, Queen of the Olympians and patron goddess of Argos and Samos, is the goddess of marriage, family, childbirth, women and is the sister-wife of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "demeter",
+      "patterns": ["who is demeter?", "demeter?"],
+      "responses": [
+        "Demeter, one of the Twelve Olympians, is the goddess of harvest, agriculture, fertility and is the sister of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Athena",
+      "patterns": ["who is Athena?", "Athena?"],
+      "responses": [
+        "Athena, one of the Twelve Olympians and patron goddess of Athens, Syracuse and Sparta, is the goddess of wisdom, handicraft, war and is the daughter of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Apollo",
+      "patterns": ["who is Apollo?", "Apollo?"],
+      "responses": [
+        "Apollo, one of the Twelve Olympians and patron god of Delphi, Delos, Thebe, Megara, Eretia, and Miletus, is the god of the Sun, light, oracles, knowledge, healing, diseases, music and related, poetry archery, herds/flocks, protection of young and is the son of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Artemis",
+      "patterns": ["who is Artemis?", "Artemis?"],
+      "responses": [
+        "Artemis, one of the Twelve Olympians and patron goddess of Ephesus, is the goddess of the hunt, the Moon, archery, forest and hills and is the daughter of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Ares",
+      "patterns": ["who is Ares?", "Ares?"],
+      "responses": [
+        "Ares, one of the Twelve Olympians, is the god of War and is the son of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Aphrodite",
+      "patterns": ["who is Aphrodite?", "Aphrodite?"],
+      "responses": [
+        "Aphrodite, one of the Twelve Olympians and patron goddess of Cnidus, is the goddess love, beauty and sexuality."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Aphrodite",
+      "patterns": ["who is Aphrodite?", "Aphrodite?"],
+      "responses": [
+        "Aphrodite, one of the Twelve Olympians and patron goddess of Cnidus, is the goddess of love, beauty and sexuality."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hephaestus",
+      "patterns": ["who is Hephaestus?", "Hephaestus?"],
+      "responses": [
+        "Hephaestus, one of the Twelve Olympians, is the god of fire, smithing, forging, sculpting, technology, blacksmiths and is the son of Zeus and Hera."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hermes",
+      "patterns": ["who is Hermes?", "Hermes?"],
+      "responses": [
+        "Hermes, one of the Twelve Olympians, is the messenger god of trade, thieves, roads, travelers, sports, athletes and is the son of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hestia",
+      "patterns": ["who is Hestia?", "Hestia?"],
+      "responses": [
+        "Hestia, one of the Twelve Olympians on some accounts, is the goddess of the hearth, home, domesticity, family, the state and is the sister of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Dionysus",
+      "patterns": ["who is Dionysus?", "Dionysus?"],
+      "responses": [
+        "Dionysus, one of the Twelve Olympians on some accounts, is the god of the vine, wine, wine-making, fertility, ritual-madness, religious ecstasy, the theatre the state and is the son of Zeus."
       ],
       "context_set": ""
     }
