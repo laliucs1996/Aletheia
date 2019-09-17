@@ -308,9 +308,9 @@
     },
     {
       "tag": "Commands",
-      "patterns": ["commands"],
+      "patterns": ["commands", "command"],
       "responses": [
-        "You can type one of the InsertNameOfOlympianGodHerefact, for example, type Hestiafact to get a cool fact or ask who is this olympian God, for example, who is Hestia? to obtain a description of the god"
+        "You can type one of the InsertNameOfOlympianGodHerefact, for example, type Hestiafact to get a cool fact or ask who is this olympian God, for example, who is Hestia? to obtain a description of the god."
       ],
       "context_set": ""
     }
