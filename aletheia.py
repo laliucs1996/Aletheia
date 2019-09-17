@@ -20,7 +20,7 @@ with open("intents.json") as file:
 
 try:
     with open("data.pickle", "rb") as f:
-        word, classes, training, output = pickle.load(f)
+        word, classes, training, result = pickle.load(f)
 except:
     word = []
     classes = []
@@ -75,16 +75,14 @@ tensorflow.reset_default_graph()
 net = tflearn.input_data(shape=[None, len(training[0])])
 net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
+net = tflearn.fully_connected(net, len(result[0]), activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-try:
-    model.load("model.tflearn")
-except:
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
+
+model.fit(training, result, n_epoch=1000, batch_size=8, show_metric=True)
+model.save("model.tflearn")
 
 
 def bag_of_words(s, word):
@@ -102,7 +100,9 @@ def bag_of_words(s, word):
 
 
 def chat():
-    print("Start talking with the bot (type quit to stop)!")
+    print(
+        "Greetings Mortal, I am Aletheia. Type #commands to see possible queries or converse with me, however I may not remember everything."
+    )
     while True:
         inp = input("You: ")
         if inp.lower() == "quit":
@@ -116,7 +116,7 @@ def chat():
                 if tg["tag"] == tag:
                     responses = tg["responses"]
 
-            print(random.choice(responses))
+            print("Aletheia: " + random.choice(responses))
         else:
             print("Truth is only given for what I know, please try again mortal.")
 

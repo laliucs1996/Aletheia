@@ -16,14 +16,6 @@
       "context_set": ""
     },
     {
-      "tag": "commands",
-      "patterns": ["Command", "Commands"],
-      "responses": [
-        "You can ask various questions about gods or goddesses or type Name of the god or goddess + Fun Truth to find a fun truth about the god or goddess."
-      ],
-      "context_set": ""
-    },
-    {
       "tag": "goodbye",
       "patterns": [
         "cya",
@@ -65,7 +57,19 @@
       "tag": "zeus",
       "patterns": ["who is zeus?", "who is your father?", "zeus?"],
       "responses": [
-        "My father, Zeus is the Lord of the Skies and patron god of Elis and Olympia, smiter of Titans, monsters and is the leader of the Gods on Mount Olympus."
+        "My father, Zeus, son of the Titans, Rhea and Kronos is the Lord of the Skies, patron god of Elis and Olympia, smiter of Titans, monsters and is the leader of the Gods on Mount Olympus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "zefact",
+      "patterns": ["zeusfact"],
+      "responses": [
+        "Zeus was a known adulterer. Fostering many children, demigods, monster or gods. In fact there are more children of other mothers in the Twelve Olympians compared to children with Hera.",
+        "Zeus killed his father, Kronos with the help of his siblings ending Kronos' reign of the world.",
+        "Zeus' mighty lightning bolt was forged by the cyclops because of their revenge from being imprisoned for what seemed like eternity.",
+        "He is my father.",
+        "He slew Typhon the strongest monster when the other gods escaped elsewhere."
       ],
       "context_set": ""
     },
@@ -73,7 +77,20 @@
       "tag": "poseidon",
       "patterns": ["who is poseidon?", "poseidon?"],
       "responses": [
-        "Poseidon, one of the Twelve Olympians and patron god of Corinth, is the lord of the seas, earthquakes and is the brother of Zeus."
+        "Poseidon, son of the Titans, Rhea and Kronos, one of the Twelve Olympians and patron god of Corinth, is the lord of the seas, earthquakes and is the brother of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "posfact",
+      "patterns": ["poseidonFact"],
+      "responses": [
+        "Poseidon is a known adulterer, bearing many children that wasn't from his wife, Amphitrite.",
+        "He raped Medusa in Athena's temple.",
+        "He is  the Lord of horses after creating them from sea foam.",
+        "Sailors often prayed to him for safe passage.",
+        "He has a grudge against Odysseus, after Odysseus killed his son, the cyclops, Polyphemus.",
+        "He lost to Athena in a competition for Athens where he presented a salt water spring."
       ],
       "context_set": ""
     },
@@ -81,7 +98,18 @@
       "tag": "hera",
       "patterns": ["who is hera?", "hera?"],
       "responses": [
-        "Hera, Queen of the Olympians and patron goddess of Argos and Samos, is the goddess of marriage, family, childbirth, women and is the sister-wife of Zeus."
+        "Hera, Queen of the Olympians, Daughter of the Titans, Rhea and Kronos and patron goddess of Argos and Samos, is the goddess of marriage, family, childbirth, women and is the sister-wife of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "herfact",
+      "patterns": ["herafact"],
+      "responses": [
+        "Hera was often jealous of Zeus' affairs and often punished the women or children brought about from the affair even if they were innocent.",
+        "Heracles was often at the wrath of Hera, in one case causing him to kill his wife and children in madness. However, they reconciled after Heracles became immortal.",
+        "The Trojan War was heavily influenced by Hera because she was not chosen by Paris.",
+        "Her sacred animal is the peacock."
       ],
       "context_set": ""
     },
@@ -89,7 +117,17 @@
       "tag": "demeter",
       "patterns": ["who is demeter?", "demeter?"],
       "responses": [
-        "Demeter, one of the Twelve Olympians, is the goddess of harvest, agriculture, fertility and is the sister of Zeus."
+        "Demeter, daughter of the Titans, Rhea and Kronos, and one of the Twelve Olympians, is the goddess of harvest, agriculture, fertility and is the sister of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "demfact",
+      "patterns": ["demeterFact"],
+      "responses": [
+        "Demeter's daughter Persephone was abducted by Hades, but this caused massive damage to Earth which lead to a shakey agreement between Demeter and Hades.",
+        "Demeter showed man how to grow and use corn.",
+        "Persephone is the product of her and Zeus' love affair."
       ],
       "context_set": ""
     },
@@ -97,7 +135,23 @@
       "tag": "Athena",
       "patterns": ["who is Athena?", "Athena?"],
       "responses": [
-        "Athena, one of the Twelve Olympians and patron goddess of Athens, Syracuse and Sparta, is the goddess of wisdom, handicraft, war and is the daughter of Zeus."
+        "Athena, one of the Twelve Olympians and patron goddess of Athens, Syracuse and Sparta, is the goddess of wisdom, handicraft, war and is the daughter of Zeus and in some cases Metis."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Athfact",
+      "patterns": ["athenaFact"],
+      "responses": [
+        "According to different pieces, Athena could either be the daughter of Zeus alone or Zeus and Metis, the latter where Zeus swallowed Metis. Metis continued crafting armor in Zeus head for Athena and after Zeus had his head cleaved, Athena came forth with full armor and weapons.",
+        "Athena is Zeus's favorite child.",
+        "Athena's sacred animal is the owl.",
+        "Athena aided many heroes, which included Perseus, slayer of Medusa, Odysseus, famed strategist of the Greeks in the Trojan War and main character of the Odyssey, and Heracles, arguably the strongest Greek Hero of all time.",
+        "Like Hera, Athena influeced the Trojan War because she was not selected by Paris.",
+        "Athena created the olive tree to win favor of the Athenians.",
+        "Athena turned Arachne into a spider for insulting the Gods.",
+        "In anger Athena, turned Medusa into a serpent haired woman with eyes that could turn people into stone.",
+        "Athena often gave skills and aid to mortals."
       ],
       "context_set": ""
     },
@@ -105,7 +159,19 @@
       "tag": "Apollo",
       "patterns": ["who is Apollo?", "Apollo?"],
       "responses": [
-        "Apollo, one of the Twelve Olympians and patron god of Delphi, Delos, Thebe, Megara, Eretia, and Miletus, is the god of the Sun, light, oracles, knowledge, healing, diseases, music and related, poetry archery, herds/flocks, protection of young and is the son of Zeus."
+        "Apollo, one of the Twelve Olympians and patron god of Delphi, Delos, Thebe, Megara, Eretia, and Miletus, is the god of the Sun, light, oracles, knowledge, healing, diseases, music and related, poetry archery, herds/flocks, protection of young and is the son of Zeus and Leto."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Apofact",
+      "patterns": ["apollofact"],
+      "responses": [
+        "Apollo taught men how to make and use medicine.",
+        "Apollo is an incredibly good musician, known to be accompanied by the Muses.",
+        "Apollo's sacred animals is the swan and the dolphin.",
+        "Apollo was gifted the power of oracles and prophecy.",
+        "Apollo is the twin brother of Artemis, both born from the communion of Zeus and Leto."
       ],
       "context_set": ""
     },
@@ -113,7 +179,18 @@
       "tag": "Artemis",
       "patterns": ["who is Artemis?", "Artemis?"],
       "responses": [
-        "Artemis, one of the Twelve Olympians and patron goddess of Ephesus, is the goddess of the hunt, the Moon, archery, forest and hills and is the daughter of Zeus."
+        "Artemis, one of the Twelve Olympians and patron goddess of Ephesus, is the goddess of the hunt, the Moon, archery, forest and hills and is the daughter of Zeus and Leto."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Artefact",
+      "patterns": ["artemisFact"],
+      "responses": [
+        "Artemis swore her to retain her purity forever.",
+        "Artemis is the twin sister of Artemis, both born from the communion of Zeus and Leto.",
+        "Artemis' sacred animal was the bear.",
+        "Artemis punished those who attacked her sacred animals, one case being, Agamemnon after he killed one of her stags in a sacred grove."
       ],
       "context_set": ""
     },
@@ -121,7 +198,18 @@
       "tag": "Ares",
       "patterns": ["who is Ares?", "Ares?"],
       "responses": [
-        "Ares, one of the Twelve Olympians, is the god of War and is the son of Zeus."
+        "Ares, one of the Twelve Olympians, is the god of War and is the son of Zeus and Hera."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Arfact",
+      "patterns": ["aresFact"],
+      "responses": [
+        "Ares wasn't a popular god, as he represented something wild and untamed.",
+        "According to Homer, Ares was hated by his parents, Hera and Zeus.",
+        "Ares' sacred animal was the vulture.",
+        "Ares is known for being humiliated in Greek Mythology, one such case was where he was exposed to all the Olympians in his affair with Aphrodite by Hephaestus, husband of Aphrodite."
       ],
       "context_set": ""
     },
@@ -134,10 +222,13 @@
       "context_set": ""
     },
     {
-      "tag": "Aphrodite",
-      "patterns": ["who is Aphrodite?", "Aphrodite?"],
+      "tag": "Aphrofact",
+      "patterns": ["Aphroditefact"],
       "responses": [
-        "Aphrodite, one of the Twelve Olympians and patron goddess of Cnidus, is the goddess of love, beauty and sexuality."
+        "Aphrodite was either born to Zeus and Dione or from sea foam after Uranus was cut into pieces.",
+        "Aphrodite and Eros, her son, often teamed up to stir up problems by making people fall in love.",
+        "Aphrodite fought for Troy because she was the one chosen by Paris.",
+        "Aphrodite's marrige with Hephaestus was an arranged one leading to many affairs of the former's part."
       ],
       "context_set": ""
     },
@@ -150,10 +241,32 @@
       "context_set": ""
     },
     {
+      "tag": "Hephfact",
+      "patterns": ["Hephaestusfact"],
+      "responses": [
+        "Hephaestus is an ugly god, ugly enough for Hera to cast him from Mount Olympus, leading to his cripple nature.",
+        "Hephaestus was worshipped primarily in Athens.",
+        "Hephaestus is generally a kind and peace-loving god.",
+        "Hephaestus created all kinds of objects for the gods, ranging from dwellings to weapons."
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "Hermes",
       "patterns": ["who is Hermes?", "Hermes?"],
       "responses": [
-        "Hermes, one of the Twelve Olympians, is the messenger god of trade, thieves, roads, travelers, sports, athletes and is the son of Zeus."
+        "Hermes, one of the Twelve Olympians, is the god of trade, thieves, roads, travelers, sports, athletes and is the son of Zeus and Maia."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hermfact",
+      "patterns": ["who is Hermes?", "Hermes?"],
+      "responses": [
+        "Hermes is the herald and messenger of the Gods.",
+        "Hermes was cunning, often called the Trickster by all.",
+        "Hermes stole cattle from Apollo, and in order to gain his forgiveness, he invented the Lyre and gifted it to his brother.",
+        "He was a jack of all trades, he was interested in nearly every subject and topic."
       ],
       "context_set": ""
     },
@@ -161,7 +274,18 @@
       "tag": "Hestia",
       "patterns": ["who is Hestia?", "Hestia?"],
       "responses": [
-        "Hestia, one of the Twelve Olympians on some accounts, is the goddess of the hearth, home, domesticity, family, the state and is the sister of Zeus."
+        "Hestia, daughter of Kronos and Rhea and one of the Twelve Olympians on some accounts, is the goddess of the hearth, home, domesticity, family, the state and is the sister of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hestfact",
+      "patterns": ["hestiafact"],
+      "responses": [
+        "Hestia was widely worshipped as a goddess. She was welcome for worship at any temple.",
+        "Cities had a hearth always running in honor of Hestia.",
+        "Every meal began and ended with an offering to Hestia.",
+        "Hestia prioritized family and community, all newborn children was presented to the hearth."
       ],
       "context_set": ""
     },
@@ -169,7 +293,24 @@
       "tag": "Dionysus",
       "patterns": ["who is Dionysus?", "Dionysus?"],
       "responses": [
-        "Dionysus, one of the Twelve Olympians on some accounts, is the god of the vine, wine, wine-making, fertility, ritual-madness, religious ecstasy, the theatre the state and is the son of Zeus."
+        "Dionysus, one of the Twelve Olympians on some accounts and a patron god of Thebes, is the god of the vine, wine, wine-making, fertility, ritual-madness, religious ecstasy, the theatre the state and is the son of Zeus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Diofact",
+      "patterns": ["dionysusfact"],
+      "responses": [
+        "Dionysus, in some variations was a god born to Zeus and Semele, a mortal. However, he is also depicted as either the son of Zeus and Demeter or Persephone.",
+        "Tragic and comedic performances were usually done in favor of Dionysus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Commands",
+      "patterns": ["commands"],
+      "responses": [
+        "You can type one of the InsertNameOfOlympianGodHerefact, for example, type Hestiafact to get a cool fact or ask who is this olympian God, for example, who is Hestia? to obtain a description of the god"
       ],
       "context_set": ""
     }
