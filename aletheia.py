@@ -104,7 +104,7 @@ def bag_of_words(s, word):
 
 def chat():
     print(
-        "Greetings Mortal, I am Aletheia. Type #commands to see possible queries or converse with me, however I may not remember everything."
+        "Greetings Mortal, I am Aletheia. Type 'commands' to see possible queries or converse with me, however I may not remember everything."
     )
     while True:
         inp = input("You: ")
