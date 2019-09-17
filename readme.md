@@ -12,6 +12,6 @@ This bot is run on Python 3.6 and was built using NLTK, TensorFlow, Numpy and TF
 - NLTK 3.4.4
   - NTLK, Natural Language Toolkit, is used to trim and tokenize words to be understandable by the bot.
 - Numpy 1.16.0
-  - Numpy makes it easy array management.
+  - Numpy makes it easy for array management.
 - TFLearn 0.3.2
   - Built on top of Tensorflow to make it easier to use.
