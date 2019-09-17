@@ -1,6 +1,10 @@
 # Aletheia
 
-A chat bot with a focus in the Twelve Olympian Gods including both Hestia and Dionysus, both being Olympians in different works, but never together.
+A chat bot with a focus in the Twelve Olympian Gods including both Hestia and Dionysus, both being Olympians in different works, but never together. The goal is to convert it into a discord bot.
+
+## How It Works
+
+The bot responds to Who is a "insert name of god/goddess" or "insert name of god/goddess" + fact (example: hestiafact) and can give a basic description of itself when asked it's name or age among other things.
 
 ## Technologies
 

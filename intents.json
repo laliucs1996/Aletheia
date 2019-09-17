@@ -261,7 +261,7 @@
     },
     {
       "tag": "Hermfact",
-      "patterns": ["who is Hermes?", "Hermes?"],
+      "patterns": ["hermesfact"],
       "responses": [
         "Hermes is the herald and messenger of the Gods.",
         "Hermes was cunning, often called the Trickster by all.",
