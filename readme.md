@@ -21,3 +21,7 @@ This bot is run on Python 3.6 and was built using NLTK, TensorFlow, Numpy, Disco
   - Built on top of Tensorflow to make it easier to use.
 - Discord.py
   - The latest version is fine.
+
+<br/>
+
+In addition please change the discord bot's token and the name of the server in the .env file.
