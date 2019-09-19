@@ -1,5 +1,12 @@
-import nltk
+# aletheia.py
 
+import os
+import random
+
+import discord
+from dotenv import load_dotenv
+
+import nltk
 from nltk.stem.lancaster import LancasterStemmer
 
 stemmer = LancasterStemmer()
@@ -10,7 +17,6 @@ import tflearn
 import random
 import json
 import pickle
-import os
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 import tensorflow
@@ -102,27 +108,43 @@ def bag_of_words(s, word):
     return numpy.array(bag)
 
 
-def chat():
-    print(
-        "Greetings Mortal, I am Aletheia. Type 'commands' to see possible queries or converse with me, however I may not remember everything."
-    )
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            break
-
-        results = model.predict([bag_of_words(inp, word)])
-        results_index = numpy.argmax(results)
-        tag = classes[results_index]
-        if results[0][results_index] > 0.7:
-            for tg in data["intents"]:
-                if tg["tag"] == tag:
-                    responses = tg["responses"]
-
-            print("Aletheia: " + random.choice(responses))
-        else:
-            print("Truth is only given for what I know, please try again mortal.")
+def chat(message):
+    results = model.predict([bag_of_words(message, word)])
+    results_index = numpy.argmax(results)
+    tag = classes[results_index]
+    if results[0][results_index] > 0.7:
+        for tg in data["intents"]:
+            if tg["tag"] == tag:
+                responses = tg["responses"]
+        return random.choice(responses)
+    else:
+        return "Truth is only given for what I know, please try again mortal."
 
 
-chat()
+load_dotenv()
+token = os.getenv("DISCORD_TOKEN")
 
+client = discord.Client()
+
+
+@client.event
+async def on_ready():
+    print(f"{client.user.name} has connected to Discord!")
+
+
+@client.event
+async def on_member_join(member):
+    await member.create_dm()
+    await member.dm_channel.send(f"Hi {member.name}, welcome to my Discord server!")
+
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+    typed = chat(message.content)
+    await message.channel.send(typed)
+
+
+print(token)
+client.run(token)
