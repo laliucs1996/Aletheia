@@ -8,7 +8,7 @@ The bot responds to Who is a "insert name of god/goddess" or "insert name of god
 
 ## Technologies
 
-This bot is run on Python 3.6 and was built using NLTK, TensorFlow, Numpy and TFLearn.
+This bot is run on Python 3.6 and was built using NLTK, TensorFlow, Numpy, Discord.py and TFLearn.
 <br />In order to run this bot please run the versions:
 
 - Tensorflow 1.2
@@ -19,3 +19,5 @@ This bot is run on Python 3.6 and was built using NLTK, TensorFlow, Numpy and TF
   - Numpy makes it easy for array management.
 - TFLearn 0.3.2
   - Built on top of Tensorflow to make it easier to use.
+- Discord.py
+  - The latest version is fine.
